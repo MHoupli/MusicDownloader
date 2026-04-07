@@ -5,8 +5,5 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Music Downloader")
-        self.setFixedSize(400, 200)
+        self.setFixedSize(600, 300)
         self.setCentralWidget(MainWidget())
-
-    def resizeEvent(self, event):
-        self.resize(event.oldSize().width(), event.oldSize().height())
